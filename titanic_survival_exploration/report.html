@@ -13608,6 +13608,7 @@ Make sure to keep track of the various features and conditions you tried before 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer</strong>: <em>Predictions have an accuracy of 80.58%.</em></p>
+<p>I got the answer through first just trying out a few combinations in the survival_stats function to find out first what branches of data presented what against the xy axis  I then realised that SibSp would have a large impact on the numbers and found a large corelation around males, so using nested if else I was able to first filter on males by age and then sub filter those by their sibling make up. I got above 80%</p>
 
 </div>
 </div>
@@ -13620,6 +13621,8 @@ Make sure to keep track of the various features and conditions you tried before 
 <h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>After several iterations of exploring and conditioning on the data, you have built a useful algorithm for predicting the survival of each passenger aboard the RMS Titanic. The technique applied in this project is a manual implementation of a simple machine learning model, the <em>decision tree</em>. A decision tree splits a set of data into smaller and smaller groups (called <em>nodes</em>), by one feature at a time. Each time a subset of the data is split, our predictions become more accurate if each of the resulting subgroups are more homogeneous (contain similar labels) than before. The advantage of having a computer do things for us is that it will be more exhaustive and more precise than our manual exploration above. <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">This link</a> provides another introduction into machine learning using a decision tree.</p>
 <p>A decision tree is just one of many models that come from <em>supervised learning</em>. In supervised learning, we attempt to use features of the data to predict or model things with objective outcome labels. That is to say, each of our data points has a known outcome value, such as a categorical, discrete label like <code>'Survived'</code>, or a numerical, continuous value like predicting the price of a house.</p>
 <h3 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">&#182;</a></h3><p><em>Think of a real-world scenario where supervised learning could be applied. What would be the outcome variable that you are trying to predict? Name two features about the data used in this scenario that might be helpful for making the predictions.</em></p>
+<p>Answer for Question 5:
+A real world scenario where supervised learning that could be applied would be: what era of art work most often drew dogs?  The outcome variable would be a certain era of artistic work (say impressionistic or cubist or realist or baroque.  With supervised learning you could look through a host of images of paintings and calculate dependent upon the data provided which paintings contained dogs. Then connect that with the creation date and find out thorugh a large set of images that are either have a dog or not have a dog one could find out which era with a certain amount of flex is the most popular 'dog' artistic era. :)</p>
 
 </div>
 </div>
